@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Rejestruj konto" BackgroundColor="Teal" FontSize="Large"/>
+            <Label Text="Podaj e-mail" TextColor="Gray"/>
+            <Entry Placeholder="Podaj e-mail" x:Name="email"/>
+            <Label Text="Podaj hasło" TextColor="Gray"/>
+            <Entry x:Name="pass1" Placeholder="Podaj hasło" IsPassword="True"/>
+            <Label Text="Potwórz hasło" TextColor="Gray"/>
+            <Entry x:Name="pass2" Placeholder="Powtórz hasło" Margin="0,0,0,16" IsPassword="True"/>
+            <Button Text="Zatwierdź" HorizontalOptions="Center" Clicked="AddUser" BackgroundColor="Gray" TextColor="Black"/>
+            <Label Text="" x:Name="info" HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

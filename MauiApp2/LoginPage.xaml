@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.LoginPage"
+             Title="LoginPage">
+    <VerticalStackLayout>
+        <VerticalStackLayout>
+            <Label Text="Logowanie" BackgroundColor="Teal" FontSize="Large"/>
+            <Label Text="Podaj e-mail"/>
+            <Entry Placeholder="Podaj e-mail" x:Name="email"/>
+            <Label Text="Podaj hasło"/>
+            <Entry x:Name="password" Placeholder="Podaj hasło"/>
+            <Button Text="Zatwierdź" HorizontalOptions="Center"/>
+            <Label Text="" x:Name="info" HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
